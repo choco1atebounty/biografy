@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link rel="icon" href="./img/favicon.ico">
 <link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/index.css">
 <link rel="stylesheet" href="./css/bootstrap.css">
 
 <style>
@@ -24,6 +23,198 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+    
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MYRIADPRO-BOLD.OTF') format('otf'),
+         url('../fonts/MYRIADPRO-REGULAR.OTF') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Myriad Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.left-text {
+    text-align: left;
+    flex: 1;
+}
+
+.right-text {
+    text-align: right;
+    flex: 1;
+}
+
+.logo_bounty {
+    background-image: url(../img/bounty.png), url(../img/фон.png) ;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    color: #fff;
+    text-align: center;
+}
+
+.container_about b{
+    color: rgb(3, 217, 199);
+}
+
+
+.hero {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: start;
+}
+
+.about {
+    color: #969696;
+    padding: 60px;
+    text-align: center;
+}
+
+.services {
+    background-image: url(../img/фон.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card {
+    background: linear-gradient(rgba(3, 217, 199), rgb(214, 248, 246));
+    display: inline-block; /* Строчно-блочный элемент */
+    transition: 0.5s ease; /* Время перехода */
+    opacity: 85%;
+    color: #000;
+}
+
+
+
+.card:hover {
+    transform: scale(1.03);
+    opacity: 100%;
+}
+
+.card-text {
+
+    color: #000000;
+}
+
+
+.calculator {
+    background: linear-gradient(rgb(3, 217, 199), rgb(214, 248, 246));
+    color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    -webkit-border-radius: 40px;
+    border: 2px solid #03d9c7;
+}
+
+.calc_design {
+    padding-left: 30px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+display: none;
+}
+
+.portfolio {
+    background-image: url(../img/фон.png);
+    
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.portfolio-item {
+    background-image: url(../img/фон.png);
+}
+.testimonials {
+    padding: 20px;
+}
+.testimonial {
+    background-image: url(../img/quote.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    color: #2d2d2d;
+}
+
+.qoute {
+    padding-left: 40px;
+}
+
+.name_qoute {
+    padding: 30px;
+    margin-left: 70px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 1024px) {
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                height: auto;
+            }
+
+            .about {
+                padding: 30px;
+            }
+
+            .services {
+                padding: 20px;
+            }
+
+            .calculator {
+                padding: 30px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .hero {
+                height: auto;
+            }
+
+            .about {
+                padding: 20px;
+            }
+
+            .services {
+                padding: 10px;
+            }
+
+            .calculator {
+                padding: 20px;
+            }
+        }
+
 </style>
 
   </head>
@@ -41,7 +232,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="ms-auto navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#about">обо мне</a>
+                                        <a class="nav-link" aria-current="page" href="#about">обо мне</a>
                                     </li>
                                     
                                     <li class="nav-item px-4">
